@@ -16,7 +16,7 @@ const Navbar = () => {
             </Button> */}
 
         </div>
-        <Menu theme='dark'>
+        {/* <Menu theme='dark'>
             <Menu.ItemGroup>
                 <Menu.Item icon={<HomeOutlined />}>
                     <Link to='/'>Home</Link>
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <Link to='/news'>News</Link>
                 </Menu.Item>
             </Menu.ItemGroup>
-        </Menu>
+        </Menu> */}
     </div>
   )
 }

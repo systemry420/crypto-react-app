@@ -1,10 +1,15 @@
 import React from 'react'
 import { Typography, Statistic, Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
+import { useGetCryptosQuery } from '../services/cryptoApi'
 
 const { Title } = Typography
 
 const Home = () => {
+  const { data, isFetching } = useGetCryptosQuery()
+
+  console.log(data);
+  
   return (
     <>
       <Title level={2} className='header'>Global Crypto Stats</Title>
