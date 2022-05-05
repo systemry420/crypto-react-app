@@ -11,6 +11,10 @@ const { Title } = Typography
 const Home = () => {
   const { data, isFetching } = useGetCryptosQuery()
 
+  if (isFetching) {
+    return <Title level={2}>Loading ...</Title>
+  }
+
   if (data) {
     const {
       total, total24hVolume, totalExchanges,
@@ -39,8 +43,7 @@ const Home = () => {
         </Row>
   
         <div className='home-heading-component'>
-          <Title level={2}>Top 10 Coins</Title>
-          <Title level={3}><Link to='/cryptocurrencies'>Show more</Link></Title>
+          <Title level={2}>Top 50 Coins</Title>
         </div>
         <Cryptocurrencies coins={data.data.coins} />
 
