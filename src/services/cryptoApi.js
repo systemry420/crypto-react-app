@@ -8,7 +8,6 @@ const apiHeaders = {
 const baseURL = 'https://coinranking1.p.rapidapi.com'
 
 const createRequest = (url) => {
-    console.log({url, headers: apiHeaders });
     return {url, headers: apiHeaders }
 }
 
