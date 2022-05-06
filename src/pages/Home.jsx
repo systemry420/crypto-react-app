@@ -51,7 +51,7 @@ const Home = () => {
           <Title level={2}>Latest News</Title>
           <Title level={3}><Link to='/news'>Show more</Link></Title>
         </div>
-        <News />
+        <News /> 
         
       </>
     )
