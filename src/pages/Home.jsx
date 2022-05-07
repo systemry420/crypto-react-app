@@ -45,7 +45,7 @@ const Home = () => {
         <div className='home-heading-component'>
           <Title level={2}>Top 50 Coins</Title>
         </div>
-        {/* <Cryptocurrencies coins={data.data.coins} /> */}
+        <Cryptocurrencies coins={data.data.coins} />
 
         <div className='home-heading-component'>
           <Title level={2}>Latest News</Title>

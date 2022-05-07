@@ -9,7 +9,6 @@ const News = () => {
   const {data, isFetching } = useGetNewsQuery({ category: 'Cryptocurrency', count: 8})
 
   if (data) {
-    console.log(data);
     return (
       <Row gutter={[24, 24]}>
         {data?.value?.map((news, i) => (
